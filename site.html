@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Fernandes | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated background grid -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <nav class="topbar">
+    <span class="topbar-logo">&lt;LF/&gt;</span>
+    <div class="topbar-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="about">
+    <div class="hero-inner">
+
+      <div class="profile-wrap">
+        <div class="profile-ring">
+          <div class="profile-ring-inner">
+            <img src="assets/perfil.jpg" alt="Lucas Fernandes Alves Rodrigues" class="profile-img">
+          </div>
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Available for hire
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-tag"># software_engineer</p>
+        <h1 class="hero-name">Lucas<br><span class="accent">Fernandes</span></h1>
+        <p class="hero-sub">Alves Rodrigues</p>
+        <p class="hero-role">Backend Developer & Systems Architect</p>
+        <p class="hero-edu">
+          <span>Engenharia da Computação</span>
+          <span class="sep">·</span>
+          <span>Engenharia de Software</span>
+          <span class="sep">·</span>
+          <span>Física</span>
+        </p>
+        <div class="hero-actions">
+          <button onclick="downloadCV()" class="btn-primary">
+            <span class="btn-icon">↓</span> Baixar CV
+          </button>
+          <a href="https://github.com/lucasfalvesdev" target="_blank" class="btn-ghost">Ver GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- SUMMARY -->
+  <section class="section" id="summary">
+    <div class="section-inner">
+      <div class="section-label">// 01 — resumo</div>
+      <div class="summary-block">
+        <p class="summary-text">
+          Engenheiro de Software com foco em <strong>sistemas escaláveis</strong>, 
+          <strong>arquitetura de software</strong> e <strong>computação de alta performance</strong>. 
+          Apaixonado por resolver problemas complexos com código limpo e eficiente.
+        </p>
+        <div class="summary-stats">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Anos de estudo</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">6+</span>
+            <span class="stat-label">Linguagens</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosidade</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <div class="section-label">// 02 — skills</div>
+      <h2 class="section-title">Technical Stack</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card" data-level="90">
+          <div class="skill-card-top">
+            <span class="skill-icon">☕</span>
+            <span class="skill-name">Java</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--pct: 90%"></div>
+          </div>
+          <div class="skill-tags"><span>OOP</span><span>Spring</span><span>JVM</span></div>
+        </div>
+
+        <div class="skill-card" data-level="85">
+          <div class="skill-card-top">
+            <span class="skill-icon">🐍</span>
+            <span class="skill-name">Python</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--pct: 85%"></div>
+          </div>
+          <div class="skill-tags"><span>Scripts</span><span>Data</span><span>Automation</span></div>
+        </div>
+
+        <div class="skill-card" data-level="80">
+          <div class="skill-card-top">
+            <span class="skill-icon">⚙️</span>
+            <span class="skill-name">C</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--pct: 80%"></div>
+          </div>
+          <div class="skill-tags"><span>Low-level</span><span>Memory</span><span>Pointers</span></div>
+        </div>
+
+        <div class="skill-card" data-level="75">
+          <div class="skill-card-top">
+            <span class="skill-icon">🔧</span>
+            <span class="skill-name">C++</span>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--pct: 75%"></div>
+          </div>
+          <div class="skill-tags"><span>STL</span><span>Performance</span><span>OOP</span></div>
+        </div>
+
+        <div class="skill-card" data-level="70">
+          <div class="skill-card-top">
+            <span class="skill-icon">⚛️</span>
+            <span class="skill-name">React</span>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--pct: 70%"></div>
+          </div>
+          <div class="skill-tags"><span>Hooks</span><span>SPA</span><span>UI</span></div>
+        </div>
+
+        <div class="skill-card" data-level="88">
+          <div class="skill-card-top">
+            <span class="skill-icon">🧠</span>
+            <span class="skill-name">Algorithms</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="--pct: 88%"></div>
+          </div>
+          <div class="skill-tags"><span>DSA</span><span>Graphs</span><span>DP</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-label">// 03 — projetos</div>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <span class="project-num">01</span>
+            <div class="project-tags">
+              <span>Java</span>
+              <span>Game Dev</span>
+            </div>
+          </div>
+          <h3 class="project-title">Batalha Naval</h3>
+          <p class="project-desc">Jogo implementado com coordenadas cartesianas e lógica avançada de proximidade. Arquitetura orientada a objetos com foco em performance.</p>
+          <div class="project-footer">
+            <a href="https://github.com/lucasfalvesdev" target="_blank" class="project-link">Ver código →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-top">
+            <span class="project-num">02</span>
+            <div class="project-tags">
+              <span>C++</span>
+              <span>Math</span>
+            </div>
+          </div>
+          <h3 class="project-title">Geometria Computacional</h3>
+          <p class="project-desc">Análise e manipulação de pontos no plano cartesiano. Algoritmos de geometria computacional para resolução de problemas geométricos complexos.</p>
+          <div class="project-footer">
+            <a href="https://github.com/lucasfalvesdev" target="_blank" class="project-link">Ver código →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--cta">
+          <div class="project-cta-inner">
+            <span class="project-cta-icon">+</span>
+            <p>Mais projetos no GitHub</p>
+            <a href="https://github.com/lucasfalvesdev" target="_blank" class="btn-ghost">Explorar →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <div class="section-label">// 04 — contato</div>
+      <h2 class="section-title">Let's Connect</h2>
+
+      <div class="contact-grid">
+        <a href="https://www.linkedin.com/in/lucas-fernandes111/" target="_blank" class="contact-card">
+          <div class="contact-icon">in</div>
+          <div class="contact-info">
+            <span class="contact-name">LinkedIn</span>
+            <span class="contact-handle">lucas-fernandes111</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <a href="https://github.com/lucasfalvesdev" target="_blank" class="contact-card">
+          <div class="contact-icon gh">gh</div>
+          <div class="contact-info">
+            <span class="contact-name">GitHub</span>
+            <span class="contact-handle">lucasfalvesdev</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <a href="https://www.instagram.com/lucasf.dev/" target="_blank" class="contact-card">
+          <div class="contact-icon ig">ig</div>
+          <div class="contact-info">
+            <span class="contact-name">Instagram</span>
+            <span class="contact-handle">lucasf.dev</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <a href="https://wa.me/5534991495513" target="_blank" class="contact-card">
+          <div class="contact-icon wa">wp</div>
+          <div class="contact-info">
+            <span class="contact-name">WhatsApp</span>
+            <span class="contact-handle">+55 34 99149-5513</span>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">&lt;LF/&gt;</span>
+      <p class="footer-text">© 2026 Lucas Fernandes Alves Rodrigues — Built with 💻 & ☕</p>
+      <button onclick="scrollToTop()" class="footer-top">↑ Top</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
